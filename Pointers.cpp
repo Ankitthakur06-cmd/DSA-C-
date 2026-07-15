@@ -9,6 +9,12 @@ void update(int *p){
     cout<<"Inside update "<<p<<endl;
     *p = *p + 1;
 }
+void Update(int **p2){
+
+    p2 = p2 + 1;
+    *p2 = *p2 + 1;
+    **p2 = **p2 + 1;
+}
 
 int main(){
     
@@ -58,14 +64,31 @@ int main(){
     // char *b = &temp;
     // cout<<b<<endl;
 
-    int value = 5;
-    int *a = &value;
-    // cout<<a<<endl;
+    // int value = 5;
+    // int *a = &value;
+    // // cout<<a<<endl;
 
-    update(a);
-    // cout<<a<<endl;
-    cout<<*a<<endl;
+    // update(a);
+    // // cout<<a<<endl;
+    // cout<<*a<<endl;
 
+    int i = 5;
+    int *p = &i;
+    // int **p2 = &p;
+    int *q = p;
+    (*q)++;
+    cout<<i<<endl;
+
+    // cout<<"Address of i : "<<p<<endl;
+    // cout<<"Address of p : "<<&p<<endl;
+    // cout<<"value of i 2 : "<<**p2<<endl;
+    // cout<<"Address of i 2 : "<<*p2<<endl;
+    // cout<<"Value of i : "<<i<<endl;
+    // cout<<"Address of p : "<<p2<<endl;
+
+    // cout<<"Before p : "<<p<<endl;
+    // Update(p2);
+    // cout<<"After p : "<<p<<endl;
 
 
 
