@@ -67,7 +67,7 @@ bool binarySearch(int arr[],int s,int e,int k){
         return binarySearch(arr,s,mid-1,k);
     }
     cout << "s = " << s << " e = " << e << " mid = " << mid << " arr[mid] = " << arr[mid] << endl;
-}
+} 
 
 int main(){
     int n;
